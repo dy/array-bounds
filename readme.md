@@ -1,20 +1,20 @@
 # array-bounds  [![experimental](https://img.shields.io/badge/stability-unstable-yellow.svg)](http://github.com/badges/stability-badges) [![Build Status](https://img.shields.io/travis/dfcreative/array-bounds.svg)](https://travis-ci.org/dfcreative/array-bounds)
 
-Find min/max values from (possibly nd-) array.
+Find min and max values of an array.
 
 [![npm install array-bounds](https://nodei.co/npm/array-bounds.png?mini=true)](https://npmjs.org/package/array-bounds/)
 
 ```js
-const bounds = require('array-bounds')
+const getBounds = require('array-bounds')
 
-bounds([0, 50, 100]) // [0, 100]
+let bounds = getBounds([0, 50, 100]) // [0, 100]
 ```
 
 ## API
 
-### [min, max] = bounds(array, n=1)
+### box = bounds(array, n=1)
 
-Figures out bounds of n-dimensional array using dimensions `n` as stride, ie. for 1d array the expected data layout is `[x, x, x, ...]` for 2d is `[x, y, x, y, ...]`, etc. Returned array contains bounds for every dimension, eg.
+Figures out bounds of n-dimensional array using dimensions `n` as stride, ie. for 1d array the expected data layout is `[x, x, x, ...]` for 2d is `[x, y, x, y, ...]`, etc. Returned array contains bounds for every dimension as `[minX, minY, ..., maxX, maxY]`, eg.
 
 ```js
 //get bounds of 3d-data
