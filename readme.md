@@ -23,3 +23,9 @@ let [minX, minY, maxX, maxY] = bounds([x1, y1, x2, y2, x3, y3, ...], 2)
 //get bounding cube
 let [minX, minY, minZ, maxX, maxY, maxZ] = bounds([x1, y1, z1, x2, y2, z2, ...], 3)
 ```
+
+## Similar
+
+* [bound-points](https://www.npmjs.com/package/bound-points) for grouped points
+* [getboundingbox](https://www.npmjs.com/package/getboundingbox)
+* [normalize-path-scale](https://www.npmjs.com/package/normalize-path-scale)
