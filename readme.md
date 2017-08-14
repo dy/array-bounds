@@ -29,3 +29,4 @@ let [minX, minY, minZ, maxX, maxY, maxZ] = bounds([x1, y1, z1, x2, y2, z2, ...],
 * [bound-points](https://www.npmjs.com/package/bound-points) for grouped points
 * [getboundingbox](https://www.npmjs.com/package/getboundingbox)
 * [normalize-path-scale](https://www.npmjs.com/package/normalize-path-scale)
+* [compute-range](https://github.com/compute-io/compute.io/wiki/compute-range)
